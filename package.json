@@ -8,7 +8,7 @@
     "precommit": "yarn lint",
     "test": "jest",
     "dev": "NODE_OPTIONS='--max-old-space-size=8192' nuxt",
-    "build": "nuxt build",
+    "build": "nuxt generate && nuxt build",
     "start": "nuxt start",
     "update:zip": "node -r esm scripts/updateZip.js",
     "update:events": "node -r esm scripts/updateEvents.js --network",
